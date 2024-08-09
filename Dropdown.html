@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Dropdown</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                font-family: 'Courier New', Courier, monospace;
+                margin: 0;
+            }
+            nav{
+                background-color: orange;
+                overflow: hidden;
+            }
+            nav ul{
+                list-style: none;
+                padding: 0;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: black;
+                padding: 14px 20px ;
+                display: inline-block;
+            }
+            nav ul li{
+                float: left;
+               
+            }
+            nav ul li a:hover{
+                background-color: orangered;
+                color: white;
+            }
+            .dropdown-list{
+                background-color: salmon;
+                position: absolute; /* it will only add the bg color for the main headin i.ehome,news,about us, leaving the sub section of news*/
+                display: none; /*to hide the news sectiom*/
+            }
+            .dropdown-list a{
+                display: block; /*the tags under the news section will come vertical below it*/
+            }
+            .dropdown:hover .dropdown-list{
+                display: block; /*whenever you hover in news sec it will dropdown its content*/
+            }
+        </style>
+        <body>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><i class="fa fa-newspaper-o"></i>News</a>
+                        <div class="dropdown-list">
+                            <a href="#"><i class="fa fa-soccer-ball-o"></i> Sports</a>
+                            <a href="#"><i class="fa fa-laptop"></i>Technology</a>
+                            <a href="#"><i class="fa fa-image"></i>Arts</a>
+                            <a href="#"><i class="fa fa-cog"></i>Others</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-id-card"></i> us</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-envelope"></i>Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-graduation-cap"></i>Careers</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-book"></i>Courses</a>
+                    </li>
+                </ul>
+            </nav>
+        </body>
+
+    </head>
+</html>
